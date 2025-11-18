@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nama Kamu — Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Nama Kamu</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h2>Hi, aku <span class="accent">Nama Kamu</span></h2>
+          <p>
+            Mahasiswa / Developer / Desainer — ringkasan singkat tentang kamu.
+          </p>
+          <a class="btn" href="#projects">Lihat Projek</a>
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h3>Tentang Saya</h3>
+        <p>
+          Deskripsi singkat: latar belakang, skill utama, tools yang dipakai
+          (mis. HTML, CSS, JS).
+        </p>
+      </section>
+
+      <section id="projects" class="container projects">
+        <h3>Projects</h3>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/project1.png" alt="project 1" />
+            <h4>Project 1</h4>
+            <p>
+              Ringkasan project. <a href="#">Demo</a> • <a href="#">Repo</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <img src="assets/project2.png" alt="project 2" />
+            <h4>Project 2</h4>
+            <p>
+              Ringkasan project. <a href="#">Demo</a> • <a href="#">Repo</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h3>Contact</h3>
+        <p>
+          Email:
+          <a href="mailto:emailkamu@example.com">emailkamu@example.com</a>
+        </p>
+        <p>LinkedIn / GitHub: <a href="#">profilmu</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Nama Kamu</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
