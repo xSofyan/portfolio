@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -17,7 +17,14 @@
       <div class="container">
         <h1 class="logo">Mochammad Sofyan Hariri</h1>
 
-        <!-- Hamburger Icon -->
+        <!-- iOS Style Dark Mode Toggle -->
+        <div class="theme-toggle" id="themeToggle">
+          <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu -->
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -34,34 +41,45 @@
     </header>
 
     <main>
-      <section id="hero" class="hero">
+      <section id="hero" class="hero reveal">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="hero-photo">
+          <img src="assets/me.png" alt="Profile Photo" />
+        </div>
         <div class="container">
-          <h2>Hi, aku <span class="accent">Mochammad Sofyan Hariri</span></h2>
-          <p>
-            Mahasiswa / Developer / Desainer — ringkasan singkat tentang kamu.
-          </p>
-          <a class="btn" href="#projects">Lihat Projek</a>
+          <h1 class="hero-title">
+            <span id="typed" class="gradient-text"></span>
+          </h1>
+
+          <h2>
+            Hi, my name
+            <span class="accent gradient-text">Mochammad Sofyan Hariri</span>
+          </h2>
+          <p></p>
+          <a class="btn" href="#projects">See my projects</a>
         </div>
       </section>
 
-      <section id="about" class="container about">
-        <h3>Tentang Saya</h3>
+      <section id="about" class="container about reveal">
+        <h3>About Me</h3>
         <p>
-          Lulusan SMAN 1 Telukjambe dengan pengalaman magang di kantor advokat
-          dan notaris. Terlatih bekerja dengan ketelitian tinggi, mengikuti
-          prosedur, serta memiliki kemampuan komunikasi dan kerja sama yang
-          baik. Siap beradaptasi dan memberikan kontribusi positif di berbagai
-          bidang pekerjaan. Berminat mengembangkan karier di lingkungan kerja
-          yang menuntut kedisiplinan dan ketelitian tinggi, dan siap beradaptasi
-          dengan sistem kerja yang dinamis di bidang administrasi maupun
-          industri.
+          Fresh graduate from the Faculty of Law at University of Buana
+          Perjuangan Karawang with over two years of internship experience as a
+          legal assistant and notary assistant. Experienced in handling
+          administration, document management, communication, and client
+          services through direct involvement in court proceedings and
+          coordination with various parties. Possess strong adaptability,
+          attention to detail, and commitment to applying legal knowledge and
+          practical experience in diverse professional environments.
         </p>
       </section>
 
-      <section id="projects" class="container projects">
+      <section id="projects" class="container projects reveal">
         <h3>Projects</h3>
         <div class="grid">
-          <article class="card">
+          <article class="card reveal stagger">
             <img src="assets/project1.png" alt="project 1" />
             <h4>Project 1</h4>
             <p>
@@ -69,7 +87,7 @@
             </p>
           </article>
 
-          <article class="card">
+          <article class="card reveal">
             <img src="assets/project2.png" alt="project 2" />
             <h4>Project 2</h4>
             <p>
@@ -79,11 +97,11 @@
         </div>
       </section>
 
-      <section id="contact" class="container contact">
+      <section id="contact" class="container contact reveal">
         <h3>Contact</h3>
         <p>
           Email:
-          <a href="mailto:emailkamu@example.com"
+          <a href="mailto:mochammadsofyanhariri@gmail.com"
             >mochammadsofyanhariri@gmail.com</a
           >
         </p>
