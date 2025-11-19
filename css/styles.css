@@ -56,8 +56,8 @@ body {
 }
 
 .site-header .container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 15px 0;
 }
@@ -67,6 +67,9 @@ body {
   font-weight: 700;
   color: #0070f3;
   transition: 0.3s;
+}
+.nav {
+  justify-self: center;
 }
 
 .nav a {
@@ -419,11 +422,8 @@ body.dark-mode .nav a {
 
 /* === Dark Mode iOS Toggle === */
 .theme-toggle {
-  position: absolute;
-  left: 1px; /* pojok kanan (tinggal geser2 kalau mau) */
-  top: 20px;
-  cursor: pointer;
-  z-index: 999;
+  position: static;
+  justify-self: end;
 }
 
 .toggle-track {
@@ -480,7 +480,7 @@ body.dark-mode .nav a {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .hero-photo img {
@@ -505,4 +505,10 @@ body.dark-mode .nav a {
     width: 180px;
     height: 180px;
   }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-self: end;
 }
