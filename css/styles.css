@@ -62,12 +62,17 @@ body {
   padding: 15px 0;
 }
 
-.logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #0070f3;
-  transition: 0.3s;
+.logo img {
+  height: 50px;        /* ubah sesuai selera */
+  width: auto;
+  display: block;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav {
   justify-self: center;
 }
@@ -512,3 +517,4 @@ body.dark-mode .nav a {
   gap: 20px;
   justify-self: end;
 }
+<h3>Certificates</h3>
