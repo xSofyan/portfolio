@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Project 1 — Legal Drafting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project — Legal Drafting</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header class="site-header">
-      <div class="container">
-        <h1 class="logo">Legal Drafting</h1>
-        <a href="index.html" class="btn">← Back</a>
+      <div class="container header-grid">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <div></div>
       </div>
     </header>
 
-    <main class="container" style="padding: 60px 0">
-      <h2>Legal Drafting</h2>
-      <p>
-        Legal document drafting for civil litigation matters including power of
-        attorney and lawsuit preparation.
-      </p>
+    <main class="container project-wrapper">
+      <a class="back-btn" href="index.html">← Back to Portfolio</a>
 
-      <div class="grid">
-        <img src="assets/project1/surat-kuasa1.jpg" class="card" />
-        <img src="assets/project1/surat-kuasa2.jpg" class="card" />
-        <img src="assets/project1/surat-gugatan1.jpg" class="card" />
+      <section class="project-hero">
+        <h1>Legal Document Drafting</h1>
+        <p>
+          A collection of anonymized legal documents—including a Power of
+          Attorney and a civil lawsuit petition—that I drafted based on
+          Indonesian legal standards.
+        </p>
+      </section>
+
+      <!-- TWO-COLUMN DOCUMENT SECTIONS -->
+      <div class="doc-columns">
+        <!-- COLUMN 1 — SURAT KUASA -->
+        <div class="doc-section">
+          <h2 class="doc-title">Power of Attorney (Surat Kuasa)</h2>
+
+          <div class="slider-container">
+            <button class="slider-btn prev">❮</button>
+            <div class="slider">
+              <img
+                src="assets/img/project1/surat-kuasa1.jpg"
+                class="slide active"
+              />
+              <img src="assets/img/project1/surat-kuasa2.jpg" class="slide" />
+            </div>
+            <button class="slider-btn next">❯</button>
+          </div>
+        </div>
+
+        <!-- COLUMN 2 — SURAT GUGATAN -->
+        <div class="doc-section">
+          <h2 class="doc-title">Civil Lawsuit Petition (Surat Gugatan)</h2>
+
+          <div class="slider-container">
+            <button class="slider-btn prev">❮</button>
+            <div class="slider">
+              <img
+                src="assets/img/project1/surat-gugatan1.jpg"
+                class="slide active"
+              />
+              <img src="assets/img/project1/surat-gugatan2.jpg" class="slide" />
+              <img src="assets/img/project1/surat-gugatan3.jpg" class="slide" />
+            </div>
+            <button class="slider-btn next">❯</button>
+          </div>
+        </div>
       </div>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>

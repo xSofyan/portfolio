@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 3 — Academic Article</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project — Academic Article</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <header class="site-header">
-      <div class="container">
-        <a href="index.html" class="logo">← Back</a>
-        <h2>Academic Publication</h2>
+      <div class="container header-grid">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <div></div>
       </div>
     </header>
 
-    <main class="container">
-      <h3>
-        Academic legal research on criminal liability for online gambling
-        promotion in digital platforms, published in peer-reviewed law journal.
-      </h3>
+    <main class="container project-wrapper">
+      <a class="back-btn" href="index.html">← Back to Portfolio</a>
 
-      <p>
-        Published in RESPONSIF Journal. You can read the full article below:
-      </p>
+      <section class="project-hero">
+        <h1>Academic Research Article</h1>
+        <p>
+          <strong
+            >Criminal Liability for Online Gambling Promotion in YouTube Comment
+            Sections</strong
+          >
+          — peer-reviewed article published in *Hukum Responsif Journal*.
+        </p>
+      </section>
 
-      <iframe
-        src="https://jurnal.ugj.ac.id/index.php/Responsif/article/view/10358/4662"
-        width="100%"
-        height="650px"
-        style="border: none; border-radius: 10px"
-      >
-      </iframe>
+      <div class="pdf-frame">
+        <iframe
+          src="https://jurnal.ugj.ac.id/index.php/Responsif/article/view/10358/4662"
+          loading="lazy"
+        ></iframe>
+      </div>
     </main>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Mochammad Sofyan Hariri — Portfolio</title>
-    <link rel="icon" type="image/png" href="assets/myicon.png" />
+    <link rel="icon" type="image/png" href="assets/img/myicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,136 +15,242 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <!-- LEFT: LOGO -->
-        <a href="#" class="logo">
-          <img src="assets/logo.png" alt="Logo" />
+      <div class="container header-grid">
+        <!-- left -->
+        <a href="index.html" class="logo" aria-label="Home">
+          <img src="assets/img/logo.png" alt="MSH logo" />
         </a>
 
-        <!-- CENTER: NAV -->
+        <!-- center -->
         <nav class="nav" id="navMenu">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <!-- RIGHT: TOGGLE + HAMBURGER -->
+        <!-- right -->
         <div class="header-right">
-          <div class="theme-toggle" id="themeToggle">
-            <div class="toggle-track">
-              <div class="toggle-thumb"></div>
-            </div>
+          <div
+            class="theme-toggle"
+            id="themeToggle"
+            role="button"
+            aria-label="Toggle theme"
+          >
+            <div class="toggle-track"><div class="toggle-thumb"></div></div>
           </div>
 
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
+      <!-- HERO -->
       <section id="hero" class="hero reveal">
-        <div class="shape shape1"></div>
-        <div class="shape shape2"></div>
-        <div class="shape shape3"></div>
-        <div class="hero-photo">
-          <img src="assets/me.png" alt="Profile Photo" />
-        </div>
-        <div class="container">
-          <h1 class="hero-title">
-            <span id="typed" class="gradient-text"></span>
-          </h1>
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi, I'm
+              <span class="accent gradient-text">Mochammad Sofyan Hariri</span>
+            </h1>
+            <p class="lead">
+              Fresh law graduate • legal draftsman • researcher — I produce
+              legal documents, publish legal opinions, and publish academic
+              research.
+            </p>
 
-          <h2>
-            Hi, my name
-            <span class="accent gradient-text">Mochammad Sofyan Hariri</span>
-          </h2>
-          <p></p>
-          <a class="btn" href="#projects">See my projects</a>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">See my projects</a>
+              <a
+                class="btn-outline"
+                href="assets/portfolio-resume.pdf"
+                target="_blank"
+                >Download CV</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-photo">
+            <img src="assets/img/me.jpg" alt="Profile photo" />
+          </div>
         </div>
       </section>
 
+      <!-- ABOUT -->
       <section id="about" class="container about reveal">
         <h3>About</h3>
         <p>
-          Fresh graduate from the Faculty of Law at University of Buana
-          Perjuangan Karawang with over two years of internship experience as a
-          legal assistant and notary assistant. Experienced in handling
-          administration, document management, communication, and client
-          services through direct involvement in court proceedings and
-          coordination with various parties. Possess strong adaptability,
-          attention to detail, and commitment to applying legal knowledge and
-          practical experience in diverse professional environments.
+          Fresh graduate from Faculty of Law (University of Buana Perjuangan
+          Karawang) with internship experience at law firms and notary offices.
+          Skilled in drafting, legal research, and document management.
+          Interested in criminal law, cyber law, and victim protection issues.
         </p>
       </section>
 
-      <section id="projects" class="container projects">
-        <h3>Projects</h3>
-        <div class="grid">
-          <!-- Project 1: Legal Drafting -->
-          <article class="card">
-            <h4>Legal Drafting</h4>
-            <p>
-              This project involved the preparation and drafting of essential
-              legal documents to support client representation in civil
-              litigation proceedings.
-              <a href="project1.html">View →</a>
-            </p>
+      <!-- PROJECTS -->
+      <section id="projects" class="container projects reveal">
+        <div class="projects-header">
+          <h3>Projects</h3>
+          <div class="projects-toolbar">
+            <div class="projects-intro">
+              Selected professional work — drafts, publications, and research.
+            </div>
+            <div class="projects-actions">
+              <button id="filterAll" class="pill active">All</button>
+              <button id="filterDocs" class="pill">Documents</button>
+              <button id="filterWriting" class="pill">Writing</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <article class="project-card" data-type="docs">
+            <img
+              class="project-thumb"
+              src="assets/img/project1/thumb.jpg"
+              alt="Legal Drafting"
+            />
+            <div class="project-body">
+              <h4>Legal Drafting</h4>
+              <p class="muted">
+                Drafted Power of Attorney, civil claim petitions, and procedural
+                documents used in client representation (anonymized).
+              </p>
+              <div class="project-links">
+                <a class="link" href="project1.html">View Project</a>
+                <a
+                  class="link"
+                  href="assets/img/project1/surat-kuasa1.jpg"
+                  target="_blank"
+                  >Preview</a
+                >
+              </div>
+            </div>
           </article>
 
-          <!-- Project 2: Legal Opinion -->
-          <article class="card">
-            <h4>Legal Opinion Blog</h4>
-            <p>
-              This project involved creating and managing a legal opinion blog
-              on Blogspot platform, aimed at providing accessible legal analysis
-              and insights to the general public on various legal issues and
-              developments.
-              <a href="project2.html">View →</a>
-            </p>
+          <!-- Card 2 -->
+          <article class="project-card" data-type="writing">
+            <img
+              class="project-thumb"
+              src="assets/img/project2/thumb.jpg"
+              alt="Legal Opinion Blog"
+            />
+            <div class="project-body">
+              <h4>Legal Opinion Blog</h4>
+              <p class="muted">
+                Public-facing commentary on criminal and cyber law — originally
+                hosted on Blogspot.
+              </p>
+              <div class="project-links">
+                <a class="link" href="project2.html">View Project</a>
+                <a
+                  class="link"
+                  href="https://mochariii.blogspot.com/"
+                  target="_blank"
+                  >Open blog</a
+                >
+              </div>
+            </div>
           </article>
 
-          <!-- Project 3: Academic Article -->
-          <article class="card">
-            <h4>Academic Research Article</h4>
-            <p>
-              This project involved conducting comprehensive legal research and
-              publishing an academic article titled "Criminal Liability for
-              Online Gambling Promotion in the YouTube Comment Column" in a
-              peer-reviewed law journal (Hukum Responsif, Vol 16 No 2, August
-              2025).
-              <a href="project3.html">View →</a>
-            </p>
+          <!-- Card 3 -->
+          <article class="project-card" data-type="writing">
+            <img
+              class="project-thumb"
+              src="assets/img/project3/thumb.jpg"
+              alt="Academic Article"
+            />
+            <div class="project-body">
+              <h4>Academic Research Article</h4>
+              <p class="muted">
+                “Criminal Liability for Online Gambling Promotion in YouTube
+                Comment Sections” — peer-reviewed (Hukum Responsif).
+              </p>
+              <div class="project-links">
+                <a class="link" href="project3.html">View Project</a>
+                <a
+                  class="link"
+                  href="assets/img/project3/article.pdf"
+                  target="_blank"
+                  >Download PDF</a
+                >
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="certificate" class="container certificate">
+      <!-- CERTIFICATES -->
+      <section id="certificate" class="container certificate reveal">
         <h3>Certificates</h3>
-        <div class="grid">
+
+        <div class="cert-grid">
           <!-- Certificate 1 -->
-          <article class="card">
-            <h4>Certificate in Legal Drafting</h4>
-            <p>
-              Completed a professional course in legal drafting, focusing on
-              creating precise and effective legal documents.
-            </p>
+          <article class="cert-card">
+            <img
+              src="assets/img/certif1.jpg"
+              alt="Certificate in Legal Drafting"
+              class="cert-thumb"
+            />
+            <div class="cert-body">
+              <h4>Certificate in Legal Drafting</h4>
+              <p>
+                Completed a professional course in drafting precise legal
+                documents.
+              </p>
+              <a href="assets/img/certif1.jpg" target="_blank" class="cert-view"
+                >View Certificate →</a
+              >
+            </div>
           </article>
 
           <!-- Certificate 2 -->
-          <article class="card">
-            <h4>Certificate in Legal Research</h4>
-            <p>
-              Earned a certificate for proficiency in legal research methods and
-              analysis.
-            </p>
+          <article class="cert-card">
+            <img
+              src="assets/img/certif2.jpg"
+              alt="Certificate in Legal Opinion"
+              class="cert-thumb"
+            />
+            <div class="cert-body">
+              <h4>Certificate in Legal Opinion</h4>
+              <p>
+                Certification of competence in writing legal analysis and
+                opinions.
+              </p>
+              <a href="assets/img/certif2.jpg" target="_blank" class="cert-view"
+                >View Certificate →</a
+              >
+            </div>
+
+            <!-- Certificate 3 -->
+            <article class="cert-card">
+              <img
+                src="assets/img/certif3.png"
+                alt="Competency-Based Training Certificate — Business & Management Program, Office Administration IV"
+                class="cert-thumb"
+              />
+              <div class="cert-body">
+                <h4>Competency-Based Training Certificate</h4>
+                <p>
+                  Business and Management Program — Office Administration IV.
+                </p>
+                <a
+                  href="assets/img/certif3.png"
+                  target="_blank"
+                  class="cert-view"
+                >
+                  View Certificate →
+                </a>
+              </div>
+            </article>
           </article>
         </div>
       </section>
 
+      <!-- CONTACT -->
       <section id="contact" class="container contact reveal">
         <h3>Contact</h3>
         <p>
@@ -153,7 +259,7 @@
             >mochammadsofyanhariri@gmail.com</a
           >
         </p>
-        <p>LinkedIn / GitHub: <a href="#">profilmu</a></p>
+        <p>LinkedIn / GitHub: <a href="#">profile</a></p>
       </section>
     </main>
 
@@ -162,6 +268,14 @@
         © <span id="year"></span> Mochammad Sofyan Hariri
       </div>
     </footer>
+
+    <!-- preview modal -->
+    <div id="previewModal" class="preview-modal" aria-hidden="true">
+      <div class="preview-inner">
+        <button class="preview-close" id="previewClose">✕</button>
+        <div id="previewContent" class="preview-content"></div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
