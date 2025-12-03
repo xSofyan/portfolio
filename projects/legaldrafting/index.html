@@ -4,21 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project — Legal Drafting</title>
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- FIXED relative path -->
+    <link rel="stylesheet" href="../../css/styles.css" />
   </head>
 
   <body>
     <header class="site-header">
       <div class="container header-grid">
-        <a href="index.html" class="logo">
-          <img src="assets/img/logo.png" alt="logo" />
+        <!-- FIXED return to homepage -->
+        <a href="/" class="logo">
+          <img src="../../assets/img/logo.png" alt="logo" />
         </a>
         <div></div>
       </div>
     </header>
 
     <main class="container project-wrapper">
-      <a class="back-btn" href="index.html">← Back to Portfolio</a>
+      <!-- FIXED back button -->
+      <a class="back-btn" href="/">← Back to Portfolio</a>
 
       <section class="project-hero">
         <h1>Legal Document Drafting</h1>
@@ -29,44 +33,58 @@
         </p>
       </section>
 
-      <!-- TWO-COLUMN DOCUMENT SECTIONS -->
       <div class="doc-columns">
-        <!-- COLUMN 1 — SURAT KUASA -->
+        <!-- COLUMN 1 -->
         <div class="doc-section">
           <h2 class="doc-title">Power of Attorney (Surat Kuasa)</h2>
 
           <div class="slider-container">
             <button class="slider-btn prev">❮</button>
+
             <div class="slider">
               <img
-                src="assets/img/project1/surat-kuasa1.jpg"
+                src="../../assets/img/project1/surat-kuasa1.jpg"
                 class="slide active"
               />
-              <img src="assets/img/project1/surat-kuasa2.jpg" class="slide" />
+              <img
+                src="../../assets/img/project1/surat-kuasa2.jpg"
+                class="slide"
+              />
             </div>
+
             <button class="slider-btn next">❯</button>
           </div>
         </div>
 
-        <!-- COLUMN 2 — SURAT GUGATAN -->
+        <!-- COLUMN 2 -->
         <div class="doc-section">
           <h2 class="doc-title">Civil Lawsuit Petition (Surat Gugatan)</h2>
 
           <div class="slider-container">
             <button class="slider-btn prev">❮</button>
+
             <div class="slider">
               <img
-                src="assets/img/project1/surat-gugatan1.jpg"
+                src="../../assets/img/project1/surat-gugatan1.jpg"
                 class="slide active"
               />
-              <img src="assets/img/project1/surat-gugatan2.jpg" class="slide" />
-              <img src="assets/img/project1/surat-gugatan3.jpg" class="slide" />
+              <img
+                src="../../assets/img/project1/surat-gugatan2.jpg"
+                class="slide"
+              />
+              <img
+                src="../../assets/img/project1/surat-gugatan3.jpg"
+                class="slide"
+              />
             </div>
+
             <button class="slider-btn next">❯</button>
           </div>
         </div>
       </div>
     </main>
-    <script src="js/main.js"></script>
+
+    <!-- FIXED JS path -->
+    <script src="../../js/main.js"></script>
   </body>
 </html>
